@@ -1,13 +1,12 @@
 
 import Navbar from "./pages/Navbar"
-import Contact from "./pages/components/Contact";
 import Footer from "./pages/Footer";
-import BodyPage from "./pages/Main";
+import BodyPage from "./pages/BodyPage";
 
 function App() {
 
   return (
-    <div className=' bg-sky-200'>
+    <div className='min-h-screen flex flex-col bg-stone-300'>
       <Navbar />
       <BodyPage />
       <Footer />

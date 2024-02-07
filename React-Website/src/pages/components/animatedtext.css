@@ -1,0 +1,22 @@
+@keyframes fallAnimation {
+  0% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50%);
+    opacity: 1;
+  }
+}
+
+.fallingText {
+  animation: fallAnimation 2s ease forwards;
+}
+
+.set-background{
+  background-image: url(../../assets/image.jpg);
+  background-size: cover;
+}

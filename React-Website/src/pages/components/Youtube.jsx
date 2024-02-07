@@ -2,7 +2,7 @@ import React from 'react'
 
 function Youtube() {
   return (
-    <div>Youtube</div>
+    <div className='flex-1'>Youtube</div>
   )
 }
 

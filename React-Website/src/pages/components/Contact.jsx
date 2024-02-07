@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact() {
   return (
-    <div className=' bg-sky-200'>
+    <div className='flex-1'>
       Contact
     </div>
   )
