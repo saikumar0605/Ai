@@ -1,12 +1,18 @@
 
+import Navbar from "./pages/Navbar"
+import Contact from "./pages/components/Contact";
+import Footer from "./pages/Footer";
+import BodyPage from "./pages/Main";
 
 function App() {
 
   return (
-      <div className='font-mono min-h-screen flex flex-col'>
-       The website
-      </div>
-    
+    <div className=' bg-sky-200'>
+      <Navbar />
+      <BodyPage />
+      <Footer />
+    </div>
+
   )
 }
 
