@@ -8,16 +8,17 @@ function Navbar() {
                 <div className="flex justify-between">
                     <div className="flex justify-between flex-1 space-x-4">
                         <div>
-                            <a href="/" className="flex items-center py-5 px-2 text-white hover:text-stone-500">
+                            <a href="/" className="flex items-center py-2 px-2 text-white hover:text-stone-500">
                                 <span className="font-bold text-xl ">SAI KUMAR REDDY</span>
                             </a>
                         </div>
                         {/* Primary Navbar items */}
                         <div className="hidden md:flex items-center space-x-1">
-                            <a href="/" className="py-5 px-3 hover:text-stone-500">Home</a>
-                            <a href="/Projects" className="py-5 px-3 hover:text-stone-500">Projects</a>
-                            <a href="Youtube" className="py-5 px-3 hover:text-stone-500">Youtube</a>
-                            <a href="/Contact" className="py-5 px-3 hover:text-stone-500">Contact</a>
+                            <a href="/" className="py-3 px-3 hover:text-stone-500">Home</a>
+                            <a href="/Projects" className="py-3 px-3 hover:text-stone-500">Projects</a>
+                            <a href="/Youtube" className="py-3 px-3 hover:text-stone-500">Youtube</a>
+                            <a href="/Blog" className="py-3 px-3 hover:text-stone-500">Blogs</a>
+                            <a href="/Contact" className="py-3 px-3 hover:text-stone-500">Contact</a>
                         </div>
                     </div>
                     {/* Mobile menu button */}
@@ -34,6 +35,7 @@ function Navbar() {
                 <a href="/Projects" className="block py-2 px-4 text-sm hover:bg-stone-500 hover:text-sky-200 text-center">Projects</a>
                 <a href="/Youtube" className="block py-2 px-4 text-sm hover:bg-stone-500 hover:text-sky-200 text-center">Youtube</a>
                 <a href="/Contact" className="block py-2 px-4 text-sm hover:bg-stone-500 hover:text-sky-200 text-center">Contact</a>
+                <a href="/Blog" className="block py-2 px-4 text-sm hover:bg-stone-500 hover:text-sky-200 text-center">Blogs</a>
 
             </div>
         </nav>

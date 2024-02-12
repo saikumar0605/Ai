@@ -7,7 +7,7 @@
     opacity: 1;
   }
   100% {
-    transform: translateY(-50%);
+    transform: translateY(-25%);
     opacity: 1;
   }
 }
@@ -17,6 +17,6 @@
 }
 
 .set-background{
-  background-image: url(../../assets/image.jpg);
+  background-image: url(../../assets/image.png);
   background-size: cover;
 }
