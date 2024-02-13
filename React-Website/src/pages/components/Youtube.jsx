@@ -10,11 +10,11 @@ const max = 10;
 function Youtube() {
   const [videos, setVideos] = useState([]);
   const [isloaded, load] = useState(false);
-{/*
+
   useEffect(() => {
     fetchVideos();
   }, []);
-*/}
+
   async function fetchVideos() {
     try {
       const response = await axios.get(`https://www.googleapis.com/youtube/v3/search`, {
@@ -29,6 +29,7 @@ function Youtube() {
       });
       console.log("success");
       setVideos(response.data.items);
+      console.log("ding dong the response",videos)
       load(true);
     } catch (err) {
       console.error(err);
@@ -43,7 +44,7 @@ function Youtube() {
       <div className=' text-black flex flex-wrap justify-center p-1'>
 
         {
-          isloaded?(
+          isloaded? (
             videos.map((video) => {
               return (
                 <div className='border-2  border-stone-400 rounded flex flex-col justify-center max-w-80 m-1 max-h-fit bg-stone-400 hover:border-4 hover:text-stone-100 ' >
@@ -55,9 +56,9 @@ function Youtube() {
                   </a> <br></br>
                 </div>
               );
-            })) : (
+            }) ) : (
             <div className='p-12 text-center'>
-              <img src={gif1} alt="loading" className=' h-44'/>
+              <img src={gif1} alt="loading" className='w-full'/>
               The Videos are Loading....
             </div>
           )
