@@ -1,11 +1,11 @@
 import React from 'react'
 import './animatedtext.css';
-import image from '../../assets/image.png';
 import fiverr from '../../assets/fiverr.svg';
 import linkedin from '../../assets/linkedin.svg';
 import medium from '../../assets/medium.svg';
 import upwork from '../../assets/upwork.svg';
 import pro from "../../assets/pro.png";
+import gh from "../../assets/gh.svg";
 
 
 
@@ -21,30 +21,10 @@ function Home() {
         </h1>
       </div>
 
-      <div className=' items-center text-center p-7'>
-        <h1 className='font-bold text-4xl'>Lets Colaborate for work</h1>
-        <div className='flex flex-wrap pt-6 text-xl justify-center'>
-          <div className=' rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-72 m-1'>
-            <img src={upwork} className=' w-6/12 m-6' />
-            Lets Colaborate via Upwork
-          </div>
-          <div className=' rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-72 m-1'>
-            <img src={fiverr} className=' w-6/12 m-6' />
-            Lets Colaborate via Fiverr
-          </div>
-          <div className='rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-72 m-1' >
-            <img src={linkedin} className='w-6/12 m-6' />
-            Lets Connect
-          </div>
-          <div className='rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-72 m-1'>
-            <img src={medium} className=' w-6/12 m-14' />
-            Read My Blogs in Medium
-          </div>
-        </div>
-      </div>
+      
 
       <div>
-     
+
 
       </div>
 
@@ -52,13 +32,39 @@ function Home() {
         <h1 className='text-center text-4xl'>About Me!</h1>
         <div className='flex flex-col md:flex-row p-9'>
           <div>
-            <img src={pro} className=' w-auto rounded-md'/>
+            <img src={pro} className=' w-auto rounded-md' />
           </div>
           <div className='pt-10 md:pl-10'>
             <h3 className='text-xl pb-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam nemo neque ratione in?
               Officia, accusamus asperiores? Cupiditate mollitia rerum laboriosam totam accusamus est, obcaecati a sit
               alias architecto perspiciatis.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className=' items-center text-center p-7 m-10'>
+        <h1 className='font-bold text-4xl'>Lets Colaborate for work</h1>
+        <div className='flex flex-wrap pt-6 text-xl justify-center'>
+          <div className=' rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-52 m-1 max-h-52'>
+            <img src={upwork} className=' w-6/12 m-6' />
+            Lets Colaborate via Upwork
+          </div>
+          <div className=' rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-52 m-1 max-h-52' >
+            <img src={fiverr} className=' w-6/12 m-6' />
+            Lets Colaborate via Fiverr
+          </div>
+          <div className='rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-52 m-1 max-h-52' >
+            <img src={linkedin} className='w-6/12 m-6' />
+            Lets Connect
+          </div>
+          <div className='rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-52 max-h-52 m-1'>
+            <img src={medium} className=' w-6/12 m-12' />
+            Read My Blogs on Medium
+          </div>
+          <div className='rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-52 max-h-52 m-1'>
+            <img src={gh} className=' w-6/12 m-6' />
+            Lets Colaborate on a Project
           </div>
         </div>
       </div>

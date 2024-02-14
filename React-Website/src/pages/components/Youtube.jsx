@@ -10,11 +10,11 @@ const max = 10;
 function Youtube() {
   const [videos, setVideos] = useState([]);
   const [isloaded, load] = useState(false);
-
+{/*
   useEffect(() => {
     fetchVideos();
   }, []);
-
+*/}
   async function fetchVideos() {
     try {
       const response = await axios.get(`https://www.googleapis.com/youtube/v3/search`, {
@@ -58,7 +58,7 @@ function Youtube() {
               );
             }) ) : (
             <div className='p-12 text-center'>
-              <img src={gif1} alt="loading" className='w-full'/>
+              <img src={gif1} alt="loading" className='w-full md:w-64'/>
               The Videos are Loading....
             </div>
           )

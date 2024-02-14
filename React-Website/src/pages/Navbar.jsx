@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {Transition} from 'react-transition-group';
+
 
 function Navbar() {
     const [hamburger, setHamburger] = useState(false);
@@ -10,7 +10,7 @@ function Navbar() {
                     <div className="flex justify-between">
                         <div className="flex justify-between flex-1 space-x-4">
                             <div>
-                                <a href="#saikumarreddy" className="flex items-center py-2 px-2 text-white hover:text-stone-500">
+                                <a href="/#saikumarreddy" className="flex items-center py-2 px-2 text-white hover:text-stone-500">
                                     <span className="font-bold text-xl ">SAI KUMAR REDDY</span>
                                 </a>
                             </div>
@@ -25,7 +25,7 @@ function Navbar() {
                         </div>
                         {/* Mobile menu button */}
                         <div className="md:hidden flex items-center">
-                            <button onClick={() => setHamburger(!hamburger)} className="mobile-menu-button">
+                            <button onClick={() => setHamburger(!hamburger)} className="mobile-menu-button text-3xl">
                                 {hamburger ? "✕" : "▤"}
                             </button>
                         </div>
