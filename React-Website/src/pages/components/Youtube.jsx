@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
+
 function Youtube() {
   const [videos, setVideos] = useState([]);
 
@@ -23,15 +24,12 @@ function Youtube() {
       <h1 className='text-center text-4xl font-bold py-4'>Checkout my Youtube Channel</h1>
       <div className='text-black flex flex-wrap justify-center p-1'>
         {videos.map((vidData, index) => (
-          <div className='border-2  border-stone-400 rounded flex flex-col justify-center max-w-80 m-1 max-h-fit bg-stone-400 hover:border-4 hover:text-stone-100 ' >
-            <a target='_blank' href={vidData.youtubeId}>
-              <div className='flex justify-center'>
-                 <img src={vidData.thumbnail} className='w-80 rounded' /> 
-              </div>
-              <p className='text-center font-bold px-4'>{vidData.title}</p>
-            </a> <br></br>
-          </div>
-
+          <a target='_blank' href={vidData.youtubeId} key="" className="max-w-72 border-white rounded overflow-hidden shadow-lg m-3 bg-stone-200 hover:bg-white hover:border-4">
+            <img className="w-full" src={vidData.thumbnail} alt='title' />
+            <div className="px-6 py-4">
+              <p className="text-gray-700 text-base">{vidData.title}</p>
+            </div>
+          </a>
         ))}
       </div>
     </div>

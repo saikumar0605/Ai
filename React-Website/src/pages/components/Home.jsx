@@ -21,14 +21,14 @@ function Home() {
         </h1>
       </div>
 
-      
+
 
       <div>
 
 
       </div>
 
-      <div id='saikumarreddy' className=' shadow-2xl m-10 p-5 rounded-md'>
+      <div id='saikumarreddy' className='bg-stone-300 shadow-2xl m-10 p-5 rounded-md'>
         <h1 className='text-center text-4xl'>About Me!</h1>
         <div className='flex flex-col md:flex-row p-9'>
           <div>

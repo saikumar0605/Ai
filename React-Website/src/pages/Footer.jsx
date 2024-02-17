@@ -19,12 +19,12 @@ function Footer() {
         
         {/* Links */}
         <div className="p-1 flex flex-col md:flex-row flex-wrap justify-center items-center gap-4">
-          <a href="#" className="hover:text-sky-200"><img className=' h-6' src={ig}/></a>
-          <a href="#" className="hover:text-sky-200"><img className=' h-6' src={x}/></a>
-          <a href="#" className="hover:text-sky-200"><img className=' h-6' src={fb}/></a>
-          <a href="#" className="hover:text-sky-200"><img className=' h-6' src={youtube}/></a>
-          <a href="#" className="hover:text-sky-200"><img className=' h-6' src={linkedin}/></a>
-          <a href="#" className="hover:text-sky-200"><img className=' h-6' src={medium}/></a>
+          <a target='_blank' href="#" className="hover:text-sky-200"><img className=' h-6' src={linkedin}/></a>
+           <a target='_blank' href="https://www.youtube.com/@SAIKUMARREDDYN" className="hover:text-sky-200"><img className=' h-6' src={youtube}/></a>
+          <a target='_blank' href="#" className="hover:text-sky-200"><img className=' h-6' src={medium}/></a>
+           <a target='_blank' href="#" className="hover:text-sky-200"><img className=' h-6' src={x}/></a>
+          <a target='_blank' href="#" className="hover:text-sky-200"><img className=' h-6' src={fb}/></a>
+          <a target='_blank' href="#" className="hover:text-sky-200"><img className=' h-6' src={ig}/></a>
         </div>
       </div>
     </footer>

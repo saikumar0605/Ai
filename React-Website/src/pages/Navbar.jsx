@@ -33,11 +33,11 @@ function Navbar() {
                 </div>
                 {/* Mobile Menu */}
                 <div className={`${hamburger ? 'absolute' : 'hidden'} md:hidden min-w-full bg-stone-900 text-center`}>
-                    <a href="/" className="block py-2 px-4 text-md text-center active:bg-stone-400">Home</a>
-                    <a href="/Projects" className="block py-2 px-4 text-md text-center active:bg-stone-400">Projects</a>
-                    <a href="/Youtube" className="block py-2 px-4 text-md  text-center active:bg-stone-400">Youtube</a>
-                    <a href="/Contact" className="block py-2 px-4 text-md  text-center active:bg-stone-400">Contact</a>
-                    <a href="/Blog" className="block py-2 px-4 text-md text-center active:bg-stone-400">Blogs</a>
+                    <a href="/" className="block py-2 px-4 text-md text-center active:bg-stone-400 hover:bg-stone-500">Home</a>
+                    <a href="/Projects" className="block py-2 px-4 text-md text-center active:bg-stone-400 hover:bg-stone-500">Projects</a>
+                    <a href="/Youtube" className="block py-2 px-4 text-md  text-center active:bg-stone-400 hover:bg-stone-500">Youtube</a>
+                    <a href="/Contact" className="block py-2 px-4 text-md  text-center active:bg-stone-400 hover:bg-stone-500">Contact</a>
+                    <a href="/Blog" className="block py-2 px-4 text-md text-center active:bg-stone-400 hover:bg-stone-500">Blogs</a>
 
                 </div>
                 

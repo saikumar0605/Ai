@@ -66,7 +66,7 @@ function Contact() {
 
 
       <div className='flex justify-center'>
-        <form className='border-4 border-stone-400 bg-stone-300 rounded-xl p-6 w-4/5 md:w-2/5 mb-16 shadow-2xl'>
+        <form className="bg-stone-300 rounded-xl p-6 w-4/5 md:w-2/5 mb-16 shadow-2xl">
 
           <div className=' mb-8'>
             <input
@@ -128,7 +128,7 @@ function Contact() {
               }}>Submit</button>
           </div>
         </form>
-
+      
       </div>
     </div>
   );
