@@ -5,9 +5,9 @@ function Projects() {
   return (
     <div className='flex-1'>
       <h1 className='text-center text-4xl font-bold py-4'>Take a look at My Projects!</h1>
-      <div className='text-black flex flex-wrap justify-center p-1'>
+      <div className='text-black flex flex-wrap justify-center p-4'>
 
-        <div className='flex flex-col md:flex-row p-9'>
+        <div className='flex flex-col md:flex-row p-9 shadow-xl bg-stone-300 hover:bg-stone-200 hover:border-4 border-stone-200 rounded-md m-4'>
           <div className='md:w-2/4'>
             <img src={image} className='w-auto rounded-md' />
           </div>
@@ -27,7 +27,7 @@ function Projects() {
           </div>
         </div>
 
-         <div className='flex flex-col md:flex-row-reverse p-9 text-right'>
+        <div className='flex flex-col md:flex-row-reverse p-9 md:text-right  shadow-xl bg-stone-300 hover:bg-stone-200 hover:border-4 border-stone-200 rounded-md m-4'>
           <div className='md:w-2/4'>
             <img src={image} className='w-auto rounded-md' />
           </div>
@@ -50,12 +50,12 @@ function Projects() {
       </div>
 
       <h1 className='text-center text-4xl font-bold py-4'>Upcoming Projects!</h1>
-      <div className='text-black flex flex-wrap justify-center p-1'>
+      <div className='text-black flex flex-wrap justify-center p-4'>
 
 
 
 
-          <div className='flex flex-col md:flex-row p-9'>
+        <div className='flex flex-col md:flex-row p-9  shadow-xl bg-stone-300 hover:bg-stone-200 hover:border-4 border-stone-200 rounded-md m-4'>
           <div className='md:w-2/4'>
             <img src={image} className='w-auto rounded-md' />
           </div>
@@ -75,7 +75,7 @@ function Projects() {
           </div>
         </div>
 
-         <div className='flex flex-col md:flex-row-reverse p-9 text-right'>
+        <div className='flex flex-col md:flex-row-reverse p-9 md:text-right shadow-xl bg-stone-300 hover:bg-stone-200 hover:border-4 border-stone-200 rounded-md m-4'>
           <div className='md:w-2/4'>
             <img src={image} className='w-auto rounded-md' />
           </div>
@@ -96,7 +96,7 @@ function Projects() {
         </div>
 
 
-        
+
       </div>
 
     </div>
