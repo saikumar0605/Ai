@@ -2,7 +2,7 @@
 import Navbar from "./pages/Navbar"
 import Footer from "./pages/Footer";
 import BodyPage from "./pages/BodyPage";
-import gif from "./assets/gif1.gif";
+
 
 function App() {
 

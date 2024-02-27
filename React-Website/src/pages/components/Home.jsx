@@ -1,4 +1,3 @@
-import React from 'react'
 import './animatedtext.css';
 import fiverr from '../../assets/fiverr.svg';
 import linkedin from '../../assets/linkedin.svg';
@@ -71,7 +70,7 @@ function Home() {
 
     </div>
   )
-};
+}
 
 
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import axios from 'axios';
 import ig from "../../assets/ig.svg";
 import linkedin from "../../assets/linkedin.svg";
@@ -25,7 +25,7 @@ function Contact() {
     } catch (err) {
       console.error('the message was not sent', err)
     }
-  };
+  }
 
   return (
     <div className='flex-1'>
