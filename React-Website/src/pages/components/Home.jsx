@@ -45,26 +45,32 @@ function Home() {
       <div className=' items-center text-center p-7 m-10'>
         <h1 className='font-bold text-4xl'>Lets Colaborate for work</h1>
         <div className='flex flex-wrap pt-6 text-xl justify-center'>
-          <div className=' rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-52 m-1 max-h-52'>
-            <img src={upwork} className=' w-6/12 m-6' />
+          
+          <a href='https://www.upwork.com/freelancers/~013f83ade1c0ec9643?viewMode=1' target='_blank' className=' rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-52 m-1 max-h-52'>
+            <img src={upwork} className=' w-6/12'/>
             Lets Colaborate via Upwork
-          </div>
-          <div className=' rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-52 m-1 max-h-52' >
-            <img src={fiverr} className=' w-6/12 m-6' />
+          </a>
+
+          <a href='https://www.fiverr.com/saikumar680?public_mode=true' target='_blank' className=' rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-52 m-1 max-h-52' >
+            <img src={fiverr} className=' w-6/12' />
             Lets Colaborate via Fiverr
-          </div>
-          <div className='rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-52 m-1 max-h-52' >
-            <img src={linkedin} className='w-6/12 m-6' />
+          </a>
+
+          <a href='https://www.linkedin.com/in/sai-kumar-reddy-n-data-scientist/' target='_blank' className='rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-52 m-1 max-h-52' >
+           <img src={linkedin} className=' w-6/12' />
             Lets Connect
-          </div>
-          <div className='rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-52 max-h-52 m-1'>
-            <img src={medium} className=' w-6/12 m-12' />
+          </a>
+
+          <a href='#' target='_blank' className='rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-52 max-h-52 m-1'>
+           <img src={medium} className=' w-6/12' />
             Read My Blogs on Medium
-          </div>
-          <div className='rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-52 max-h-52 m-1'>
-            <img src={gh} className=' w-6/12 m-6' />
+          </a>
+
+          <a href='https://github.com/saikumar0605' target='_blank' className='rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-52 max-h-52 m-1'>
+             <img src={gh} className=' w-6/12' />
             Lets Colaborate on a Project
-          </div>
+          </a>
+
         </div>
       </div>
 

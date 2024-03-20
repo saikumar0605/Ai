@@ -2,7 +2,7 @@ import { useState } from 'react'
 import axios from 'axios';
 import ig from "../../assets/ig.svg";
 import linkedin from "../../assets/linkedin.svg";
-import fb from "../../assets/fb.svg";
+import fb from "../../assets/discord-6.svg";
 import mail from "../../assets/mail.svg"
 
 function Contact() {
@@ -32,32 +32,36 @@ function Contact() {
       <h1 className=' text-4xl text-center pt-10  font-bold text-stone-700'>Get in touch with me!</h1>
 
       <div className=' items-center text-center p-7'>
-        <div className='flex flex-wrap pt-6 text-xl justify-center'>
-          <a href='#'>
-          <div className=' rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-72 m-1'>
-          <img src={ig} className=' w-4/12 m-6' />
-            lets get in touch
-          </div>
-          </a>
-           <a href='#'>
-          <div className=' rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-72 m-1'>
-            <img src={fb} className=' w-4/12 m-6' />
-            Lets chat
+        <div className='flex flex-wrap pt-6 text-xl justify-center'>           
+        <a href="https://www.instagram.com/sai_kumar_datascientist/" target="_blank">
+         <div className=' rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-72 m-1'>
+              <img src={ig} className=' w-4/12 m-6' />
+              lets get in touch
             </div>
           </a>
-           <a href='#'>
-          <div className='rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-72 m-1' >
-            <img src={linkedin} className='w-4/12 m-6' />
-            Lets Connect
+
+          <a href='https://discord.com/invite/ZpSZ8PmK' target="_blank">
+            <div className=' rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-72 m-1'>
+              <img src={fb} className=' w-4/12 m-6' />
+              Lets chat
             </div>
-            </a>
-             <a href='mailto:123email@email.com'>
-          <div className='rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-72 m-1' >
-          <img src={mail} className='w-4/12 m-6' />
-            Or send me mail @
-            123.email@email.com
-          </div>
           </a>
+
+          <a href='https://www.linkedin.com/in/sai-kumar-reddy-n-data-scientist/' target="_blank">
+            <div className='rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-72 m-1' >
+              <img src={linkedin} className='w-4/12 m-6' />
+              Lets Connect
+            </div>
+          </a>
+
+          <a href='mailto:123saikumarreddy@gmail.com'>
+            <div className='rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-72 m-1' >
+              <img src={mail} className='w-4/12 m-6' />
+              Or send me mail @
+              123saikumarreddy@gmail.com
+            </div>
+          </a>
+
         </div>
       </div>
 
@@ -128,7 +132,7 @@ function Contact() {
               }}>Submit</button>
           </div>
         </form>
-      
+
       </div>
     </div>
   );

@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import DOMPurify from 'dompurify';
 import image from "../../assets/image.png";
+
 
 function Blog() {
   let articleBody;
@@ -34,11 +36,11 @@ function Blog() {
 
               <div className='flex flex-col md:flex-row p-9   shadow-xl bg-stone-200 hover:bg-stone-300 hover:border-4 border-stone-200 hover:border-stone-300 rounded-md m-4'>
                 <div className='md:w-2/4'>
-                  <img src={article.thumbnail} className='w-auto rounded-md' />
+                  <img src={article.thumbnail || image} className='w-auto rounded-md' />
                 </div>
                 <div className=' md:w-3/4 md:pl-10'>
                   <h1 className='text-xl pb-6 '>{article.title}</h1>
-                  <p className=' max-h-96 overflow-hidden'> {article.content}
+                 <p className=' max-h-16 overflow-hidden'> {DOMPurify.sanitize(`${article.content}`)}
                   </p>
                   <div className='flex flex-row-reverse'>
                     <a target='_blank' rel='noreferrer' href={article.link} key={index} className=' my-4'>
