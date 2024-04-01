@@ -1,100 +1,137 @@
+import { useEffect, useState } from 'react';
 import image from "../../assets/image.png";
 
+
 function Projects() {
+  const [projects, setProjects] = useState([]);
+  const [upProjects,setUpProjects] = useState([]);
+
+  useEffect(() => {
+   projectsFetch();
+   upProjectsFetch();
+
+  }, []);
+
+  function projectsFetch(){
+    fetch('/projects.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        setProjects(data);
+        console.log(data); // Correct place to log the videos after they are set
+      })
+      .catch(error => console.error("Fetching data failed", error));
+  }
+
+  function upProjectsFetch(){
+    fetch('/upProjects.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        setUpProjects(data);
+        console.log(data); // Correct place to log the videos after they are set
+      })
+      .catch(error => console.error("Fetching data failed", error));
+  }
+
   return (
     <div className='flex-1'>
       <h1 className='text-center text-4xl font-bold py-4'>Take a look at My Projects!</h1>
       <div className='text-black flex flex-wrap justify-center p-4'>
 
-        <div className='flex flex-col md:flex-row p-9 shadow-xl bg-stone-300 hover:bg-stone-200 hover:border-4 border-stone-200 rounded-md m-4'>
-          <div className='md:w-2/4'>
-            <img src={image} className='w-auto rounded-md' />
-          </div>
-          <div className=' md:w-3/4 md:pl-10'>
-            <h1 className='text-xl pb-6'>Title of the Project</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis tenetur maiores architecto,
-              molestias quasi illum, mollitia illo facilis delectus ad natus consequuntur vero, animi laudantium
-              culpa exercitationem voluptatum? Nihil? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis tenetur maiores architecto,
-              molestias quasi illum, mollitia illo facilis delectus ad natus consequuntur vero, animi laudantium
-              culpa exercitationem voluptatum? Nihil?
-            </p>
-            <div className='flex flex-row-reverse'>
-              <a href='#' className=' my-4'>
-                <button className='bg-stone-800 p-3 rounded-md text-stone-200'>View Project</button>
-              </a>
-            </div>
-          </div>
-        </div>
+        {projects.map((projectData, index) => (
 
-        <div className='flex flex-col md:flex-row-reverse p-9 md:text-right  shadow-xl bg-stone-300 hover:bg-stone-200 hover:border-4 border-stone-200 rounded-md m-4'>
-          <div className='md:w-2/4'>
-            <img src={image} className='w-auto rounded-md' />
-          </div>
-          <div className=' md:w-3/4 md:pr-10'>
-            <h1 className='text-xl pb-6 '>Title of the Project</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis tenetur maiores architecto,
-              molestias quasi illum, mollitia illo facilis delectus ad natus consequuntur vero, animi laudantium
-              culpa exercitationem voluptatum? Nihil? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis tenetur maiores architecto,
-              molestias quasi illum, mollitia illo facilis delectus ad natus consequuntur vero, animi laudantium
-              culpa exercitationem voluptatum? Nihil?
-            </p>
-            <div className='flex flex-row'>
-              <a href='#' className=' my-4'>
-                <button className='bg-stone-800 p-3 rounded-md text-stone-200'>View Project</button>
-              </a>
+          (index % 2 == 0) ? (
+            <div className='flex flex-col md:flex-row p-9 shadow-xl bg-stone-300  border-stone-200 rounded-md m-4 min-w-full'>
+              <div className='md:w-2/4'>
+                <img src={projectData.thumbnail} className='w-auto rounded-md max-h-72' />
+              </div>
+              <div className=' md:w-3/4 md:pl-10'>
+                <h1 className='text-xl pb-2'>{projectData.title}</h1>
+                <h3 className=" text-lg pb-6">{projectData.subHeadingDesc}</h3>
+                <p>{projectData.description}</p>
+                <div className='flex flex-row-reverse'>
+                  <a href={projectData.ghLink} className=' my-4'>
+                    <button className='bg-stone-800 p-3 rounded-md text-stone-200'>View Project</button>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+
+          ) : (
+
+            <div className='flex flex-col md:flex-row-reverse p-9 md:text-right  shadow-xl bg-stone-300  border-stone-200 rounded-md m-4 min-w-full'>
+              <div className='md:w-2/4'>
+                <img src={projectData.thumbnail} className='w-auto rounded-md max-h-72' />
+              </div>
+              <div className=' md:w-3/4 md:pr-10'>
+                <h1 className='text-xl pb-6 '>{projectData.title}</h1>
+                <h3 className=" text-lg pb-6">{projectData.subHeadingDesc}</h3>
+                <p>{projectData.description}</p>
+                <div className='flex flex-row'>
+                  <a href={projectData.ghLink} className=' my-4'>
+                    <button className='bg-stone-800 p-3 rounded-md text-stone-200'>View Project</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          )
+
+        ))}
+
 
       </div>
-
+      {/*----------------------------------------------------------------------------------------------- */}
       <h1 className='text-center text-4xl font-bold py-4'>Upcoming Projects!</h1>
       <div className='text-black flex flex-wrap justify-center p-4'>
 
+        {upProjects.map((projectData, index) => (
 
-
-
-        <div className='flex flex-col md:flex-row p-9  shadow-xl bg-stone-300 hover:bg-stone-200 hover:border-4 border-stone-200 rounded-md m-4'>
-          <div className='md:w-2/4'>
-            <img src={image} className='w-auto rounded-md' />
-          </div>
-          <div className=' md:w-3/4 md:pl-10'>
-            <h1 className='text-xl pb-6'>Title of the Project</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis tenetur maiores architecto,
-              molestias quasi illum, mollitia illo facilis delectus ad natus consequuntur vero, animi laudantium
-              culpa exercitationem voluptatum? Nihil? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis tenetur maiores architecto,
-              molestias quasi illum, mollitia illo facilis delectus ad natus consequuntur vero, animi laudantium
-              culpa exercitationem voluptatum? Nihil?
-            </p>
-            <div className='flex flex-row-reverse'>
-              <a href='#' className=' my-4'>
-                <button className='bg-stone-800 p-3 rounded-md text-stone-200'>View Project</button>
-              </a>
+          (index % 2 == 0) ? (
+            <div className='flex flex-col md:flex-row p-9 shadow-xl bg-stone-300  border-stone-200 rounded-md m-4 min-w-full'>
+              <div className='md:w-2/4'>
+                <img src={projectData.thumbnail} className='w-auto rounded-md max-h-72' />
+              </div>
+              <div className=' md:w-3/4 md:pl-10'>
+                <h1 className='text-xl pb-2'>{projectData.title}</h1>
+                <h3 className=" text-lg pb-6">{projectData.subHeadingDesc}</h3>
+                <p>{projectData.description}</p>
+                <div className='flex flex-row-reverse'>
+                  <a href={projectData.ghLink} className=' my-4'>
+                    <button className='bg-stone-800 p-3 rounded-md text-stone-200'>View Project</button>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div className='flex flex-col md:flex-row-reverse p-9 md:text-right shadow-xl bg-stone-300 hover:bg-stone-200 hover:border-4 border-stone-200 rounded-md m-4'>
-          <div className='md:w-2/4'>
-            <img src={image} className='w-auto rounded-md' />
-          </div>
-          <div className=' md:w-3/4 md:pr-10'>
-            <h1 className='text-xl pb-6 '>Title of the Project</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis tenetur maiores architecto,
-              molestias quasi illum, mollitia illo facilis delectus ad natus consequuntur vero, animi laudantium
-              culpa exercitationem voluptatum? Nihil? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis tenetur maiores architecto,
-              molestias quasi illum, mollitia illo facilis delectus ad natus consequuntur vero, animi laudantium
-              culpa exercitationem voluptatum? Nihil?
-            </p>
-            <div className='flex flex-row'>
-              <a href='#' className=' my-4'>
-                <button className='bg-stone-800 p-3 rounded-md text-stone-200'>View Project</button>
-              </a>
+          ) : (
+
+            <div className='flex flex-col md:flex-row-reverse p-9 md:text-right  shadow-xl bg-stone-300  border-stone-200 rounded-md m-4 min-w-full'>
+              <div className='md:w-2/4'>
+                <img src={projectData.thumbnail} className='w-auto rounded-md max-h-72' />
+              </div>
+              <div className=' md:w-3/4 md:pr-10'>
+                <h1 className='text-xl pb-6 '>{projectData.title}</h1>
+                <h3 className=" text-lg pb-6">{projectData.subHeadingDesc}</h3>
+                <p>{projectData.description}</p>
+                <div className='flex flex-row'>
+                  <a href={projectData.ghLink} className=' my-4'>
+                    <button className='bg-stone-800 p-3 rounded-md text-stone-200'>View Project</button>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+          )
 
-
+        ))}
 
       </div>
 

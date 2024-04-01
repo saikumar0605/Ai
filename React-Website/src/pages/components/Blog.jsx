@@ -40,8 +40,8 @@ function Blog() {
                 </div>
                 <div className=' md:w-3/4 md:pl-10'>
                   <h1 className='text-xl pb-6 '>{article.title}</h1>
-                 <p className=' max-h-16 overflow-hidden'> {DOMPurify.sanitize(`${article.content}`)}
-                  </p>
+                {/*  <p className=' max-h-16 overflow-hidden'> {DOMPurify.sanitize(`${article.content}`)} 
+                  </p>*/}
                   <div className='flex flex-row-reverse'>
                     <a target='_blank' rel='noreferrer' href={article.link} key={index} className=' my-4'>
                       <button className='bg-stone-800 p-3 rounded-md text-stone-200'>Read Blog</button>

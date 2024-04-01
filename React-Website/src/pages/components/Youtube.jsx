@@ -5,7 +5,7 @@ function Youtube() {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetch('/data.json')
+    fetch('/yt.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -24,6 +24,7 @@ function Youtube() {
       <h1 className='text-center text-4xl font-bold py-4'>Checkout my Youtube Channel</h1>
       <div className='text-black flex flex-wrap justify-center p-1'>
         {videos.map((vidData) => (
+       
           <a target='_blank' rel='noreferrer' href={vidData.youtubeId} key="" className="max-w-72 border-stone-300 rounded overflow-hidden shadow-lg m-3 bg-stone-200 hover:bg-stone-300 hover:border-4">
             <img className="w-full" src={vidData.thumbnail} alt='title' />
             <div className="px-6 py-4">
