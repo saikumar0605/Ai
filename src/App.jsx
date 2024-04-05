@@ -31,7 +31,7 @@ function App() {
         <BodyPage />
         <Footer />
       </div>
-      <a href="https://discord.com/invite/ZpSZ8PmK" target="_blank" className=" fixed text-stone-900 bottom-0 right-0 m-16 md:m-16 p-3 bg-stone-100 border-stone-500 border-2 text-center rounded-xl">
+      <a href="https://discord.gg/uxfBM9zz" target="_blank" className=" fixed text-stone-900 bottom-0 right-0 m-16 md:m-16 p-3 bg-stone-100 border-stone-500 border-2 text-center rounded-xl">
        <div className="flex">
           <img ref={iconRef} src={discord} className="p-1 h-10 rotate-720 flex-1" />
        </div>
