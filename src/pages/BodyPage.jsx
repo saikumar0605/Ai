@@ -9,11 +9,11 @@ function BodyPage() {
   return (
     
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Projects" element={<Projects />} />
-        <Route path="/Youtube" element={<Youtube/>}/>
-        <Route path='/Contact' element={<Contact/>}/>
-        <Route path='/Blog' element={<Blog/>} />
+        <Route path="/Ai" element={<Home />} />
+        <Route path="/Ai/Projects" element={<Projects />} />
+        <Route path="/Ai/Youtube" element={<Youtube/>}/>
+        <Route path='/Ai/Contact' element={<Contact/>}/>
+        <Route path='/Ai/Blog' element={<Blog/>} />
       </Routes>
   )
 }
