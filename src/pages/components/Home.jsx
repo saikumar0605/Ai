@@ -31,7 +31,7 @@ function Home() {
         <h1 className='text-center text-4xl'>About Me!</h1>
         <div className='flex flex-col md:flex-row p-9'>
           <div>
-            <img src={pro} className=' w-auto rounded-md min-w-96' />
+            <img src={pro} className=' w-auto rounded-md min-w-60' />
           </div>
           <div className='pt-10 md:pl-10'>
             <h3 className='text-xl pb-6'> As an accomplished senior associate data scientist at ineuron.ai and Physicswalla , I have developed a strong foundation in Python, MongoDB, Git and Github, Machine Learning, Deep Learning, NLP, Generative AI, Docker, LLM and MLflow. In addition to my professional work, I am also a successful YouTuber, demonstrating my ability to effectively communicate complex concepts to a broad audience. Passion for data and a deep understanding of the tools and technologies required to analyze it, I am committed to using my skills and expertise to drive meaningful insights and business results. As a highly motivated and dynamic individual, I am eager to take on new challenges and contribute to the success of any team.</h3>

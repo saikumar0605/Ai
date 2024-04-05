@@ -89,7 +89,9 @@ function Projects() {
 
 
       </div>
+      
       {/*----------------------------------------------------------------------------------------------- */}
+
       <h1 className='text-center text-4xl font-bold py-4'>Upcoming Projects!</h1>
       <div className='text-black flex flex-wrap justify-center p-4'>
 
