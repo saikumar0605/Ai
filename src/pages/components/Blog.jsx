@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import DOMPurify from 'dompurify';
 import image from "../../assets/image.png";
 
 
