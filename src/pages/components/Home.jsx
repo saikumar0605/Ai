@@ -58,7 +58,7 @@ function Home() {
             Lets Connect
           </a>
 
-          <a href='#' target='_blank' className='rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-52 max-h-52 m-1'>
+          <a href='https://medium.com/@vinodkumargr' target='_blank' className='rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-52 max-h-52 m-1'>
             <img src={medium} className=' w-6/12' />
             Read My Blogs on Medium
           </a>
