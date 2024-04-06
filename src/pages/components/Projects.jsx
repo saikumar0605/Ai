@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import image from "../../assets/image.png";
+import image from "../../assets/projectDefault.png";
 
 
 function Projects() {
@@ -51,7 +51,7 @@ function Projects() {
 
           (index % 2 == 0) ? (
             <div className='flex flex-col md:flex-row p-9 shadow-xl bg-stone-300  border-stone-200 rounded-md m-4 min-w-full'>
-              <div className='md:w-2/4'>
+              <div className='md:w-1/4'>
                 <img src={projectData.thumbnail || image} className='w-auto rounded-md max-h-72' />
               </div>
               <div className=' md:w-3/4 md:pl-10'>
@@ -69,7 +69,7 @@ function Projects() {
           ) : (
 
             <div className='flex flex-col md:flex-row-reverse p-9 md:text-right  shadow-xl bg-stone-300  border-stone-200 rounded-md m-4 min-w-full'>
-              <div className='md:w-2/4'>
+              <div className='md:w-1/4'>
                 <img src={projectData.thumbnail || image} className='w-auto rounded-md max-h-72' />
               </div>
               <div className=' md:w-3/4 md:pr-10'>
@@ -99,7 +99,7 @@ function Projects() {
 
           (index % 2 == 0) ? (
             <div className='flex flex-col md:flex-row p-9 shadow-xl bg-stone-300  border-stone-200 rounded-md m-4 min-w-full'>
-              <div className='md:w-2/4'>
+              <div className='md:w-1/4'>
                 <img src={projectData.thumbnail || image} className='w-auto rounded-md max-h-72' />
               </div>
               <div className=' md:w-3/4 md:pl-10'>
@@ -117,7 +117,7 @@ function Projects() {
           ) : (
 
             <div className='flex flex-col md:flex-row-reverse p-9 md:text-right  shadow-xl bg-stone-300  border-stone-200 rounded-md m-4 min-w-full'>
-              <div className='md:w-2/4'>
+              <div className='md:w-1/4'>
                 <img src={projectData.thumbnail || image} className='w-auto rounded-md max-h-72' />
               </div>
               <div className=' md:w-3/4 md:pr-10'>

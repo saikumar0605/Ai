@@ -4,9 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [hamburger, setHamburger] = useState(false);
-
     return (
-
         <nav className=" bg-stone-950 text-white h-14 pt-2">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex justify-between">
@@ -34,7 +32,7 @@ function Navbar() {
                 </div>
             </div>
             {/* Mobile Menu */}
-            <div className={`${hamburger ? 'absolute' : 'hidden'} md:hidden min-w-full bg-stone-900 text-center`}>
+            <div className={`${hamburger ? 'absolute' : 'hidden'} md:hidden min-w-full bg-stone-900 text-center mobileViewHam`}>
                 <Link to="/" className="block py-2 px-4 text-md  text-center active:bg-stone-400 hover:bg-stone-500">Home</Link>
                 <Link to="/Projects" className="block py-2 px-4 text-md  text-center active:bg-stone-400 hover:bg-stone-500">Projects</Link>
                 <Link to="/Youtube" className="block py-2 px-4 text-md  text-center active:bg-stone-400 hover:bg-stone-500">Youtube</Link>
@@ -47,5 +45,6 @@ function Navbar() {
 
     )
 }
+
 
 export default Navbar
