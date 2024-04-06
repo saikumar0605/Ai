@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [hamburger, setHamburger] = useState(false);
+
     return (
 
-        <nav className=" bg-stone-950 text-white">
+        <nav className=" bg-stone-950 text-white h-14 pt-2">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex justify-between">
                     <div className="flex justify-between flex-1 space-x-4">
@@ -26,7 +27,7 @@ function Navbar() {
                     </div>
                     {/* Mobile menu button */}
                     <div className="md:hidden flex items-center">
-                        <button onClick={() => setHamburger(!hamburger)} className="mobile-menu-button text-3xl">
+                        <button onClick={() => setHamburger(!hamburger)} className="mobile-menu-button text-4xl">
                             {hamburger ? "✕" : "▤"}
                         </button>
                     </div>
