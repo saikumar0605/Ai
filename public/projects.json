@@ -7,27 +7,27 @@
         "ghLink": "https://github.com/saikumar0605/Computer-network-intrusion-detection"
     },
     {
-        "title": "project title",
-        "subHeadingDesc": "project sub-title",
-        "description": "project description - can be as long as you want",
-        "thumbnail": "https://img.youtube.com/vi/oauJz3XbdjQ/0.jpg",
-        "ghLink": "#"
+        "title": "Flight Delay Prediction",
+        "subHeadingDesc": "project is mainly implemented using DaskML",
+        "description": "Dask is a library that supports parallel computing in python. and how to use it. with project. explanation is available in my youtube channel. Flight Delay Model using Dask This is a project to build a machine learning model to predict flight delays using Dask, a parallel computing library for Python. The model is built using a dataset of flight information, which includes features such as flight date, airline, departure and arrival times, and distance. The goal is to predict whether a given flight will be delayed by 15 minutes or more, based on these features.",
+        "thumbnail": "",
+        "ghLink": "https://github.com/saikumar0605/flight-delay-prediction-using-Dask-ml"
     },
     
     {
-        "title": "project title",
-        "subHeadingDesc": "project sub-title",
-        "description": "project description - can be as long as you want",
-        "thumbnail": "https://img.youtube.com/vi/oauJz3XbdjQ/0.jpg",
-        "ghLink": "#"
+        "title": "Telegram Bot Using OpenAI",
+        "subHeadingDesc": "project is implementied using python==3.7.4, OpenAI, Aiogram and Telegram API",
+        "description": "The Telegram Chatbot with GPT-3.5 Turbo is an intelligent conversational agent designed to interact with users on the popular messaging platform Telegram. Leveraging the cutting-edge capabilities of OpenAI's GPT-3.5 Turbo model, this bot can engage users in natural and meaningful conversations, providing responses that are contextually relevant and human-like.",
+        "thumbnail": "",
+        "ghLink": "https://github.com/saikumar0605/telegram-bot-openai"
     },
     
     {
-        "title": "project title",
-        "subHeadingDesc": "project sub-title",
-        "description": "project description - can be as long as you want",
-        "thumbnail": "https://img.youtube.com/vi/oauJz3XbdjQ/0.jpg",
-        "ghLink": "#"
+        "title": "Generative AI Roadmap",
+        "subHeadingDesc": "This Repo Contains LLM structure to Self-study",
+        "description": "This project in github focuses on the roadmap link how you can read genrative ai if you are starting new in 2024. and what all prerequisites you need to learn before starting to read LLM. check out if helpfull follow me on github. ",
+        "thumbnail": "",
+        "ghLink": "https://github.com/saikumar0605/llm-course"
     }
 
 ]
