@@ -1,33 +1,10 @@
-[
+[    
     {
-        "title": "project title",
-        "subHeadingDesc": "project sub-title",
-        "description": "project description - can be as long as you want",
-        "thumbnail": "https://img.youtube.com/vi/oauJz3XbdjQ/0.jpg",
-        "ghLink": "#"
-    },
-    {
-        "title": "project title",
-        "subHeadingDesc": "project sub-title",
-        "description": "project description - can be as long as you want",
-        "thumbnail": "https://img.youtube.com/vi/oauJz3XbdjQ/0.jpg",
-        "ghLink": "#"
-    },
-    
-    {
-        "title": "project title",
-        "subHeadingDesc": "project sub-title",
-        "description": "project description - can be as long as you want",
-        "thumbnail": "https://img.youtube.com/vi/oauJz3XbdjQ/0.jpg",
-        "ghLink": "#"
-    },
-    
-    {
-        "title": "project title",
-        "subHeadingDesc": "project sub-title",
-        "description": "project description - can be as long as you want",
-        "thumbnail": "https://img.youtube.com/vi/oauJz3XbdjQ/0.jpg",
-        "ghLink": "#"
+        "title": "Research Paper QA Speech Retrieval Model",
+        "subHeadingDesc": "This project is completly Opensource and bulding using Ollama, Llama2, Langchain and other Speech Models",
+        "description": "Welcome to the Research Paper QA Model repository! This project aims to develop a powerful Question Answering (QA) model specifically tailored for research papers. With the integration of open-source tools such as Ollama, LangChain, Transformers, and more Opensource Models, we're crafting a solution that simplifies the understanding of complex research literature.",
+        "thumbnail": "",
+        "ghLink": "https://github.com/saikumar0605/QA-Speech-Retrieval/tree/main"
     }
 
 ]
