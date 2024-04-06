@@ -20,9 +20,9 @@ function Footer() {
         <div className="p-1 flex flex-col md:flex-row flex-wrap justify-center items-center gap-4">
           <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/sai-kumar-reddy-n-data-scientist/" className="hover:text-sky-200"><img className=' h-6' src={linkedin}/></a>
            <a target='_blank' rel="noreferrer" href="https://www.youtube.com/@SAIKUMARREDDYN" className="hover:text-sky-200"><img className=' h-6' src={youtube}/></a>
-          <a target='_blank' rel="noreferrer" href="#" className="hover:text-sky-200"><img className=' h-6' src={medium}/></a>
+          <a target='_blank' rel="noreferrer" href="https://medium.com/@vinodkumargr" className="hover:text-sky-200"><img className=' h-6' src={medium}/></a>
            <a target='_blank' rel="noreferrer" href="https://twitter.com/123saikumar9036" className="hover:text-sky-200"><img className=' h-6' src={x}/></a>
-          <a target='_blank' rel="noreferrer" href="https://discord.com/invite/ZpSZ8PmK" className="hover:text-sky-200"><img className=' h-6' src={fb}/></a>
+          <a target='_blank' rel="noreferrer" href="https://discord.gg/uxfBM9zz" className="hover:text-sky-200"><img className=' h-6' src={fb}/></a>
           <a target='_blank' rel="noreferrer" href="https://www.instagram.com/sai_kumar_datascientist/" className="hover:text-sky-200"><img className=' h-6' src={ig}/></a>
         </div>
       </div>

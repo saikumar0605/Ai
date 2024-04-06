@@ -22,10 +22,6 @@ function Home() {
 
 
 
-      <div>
-
-
-      </div>
 
       <div id='saikumarreddy' className='bg-stone-300 shadow-2xl m-10 p-5 rounded-md'>
         <h1 className='text-center text-4xl'>About Me!</h1>
