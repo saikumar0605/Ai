@@ -36,9 +36,8 @@ function Navbar() {
                 <Link to="/" className="block py-2 px-4 text-md  text-center active:bg-stone-400 hover:bg-stone-500">Home</Link>
                 <Link to="/Projects" className="block py-2 px-4 text-md  text-center active:bg-stone-400 hover:bg-stone-500">Projects</Link>
                 <Link to="/Youtube" className="block py-2 px-4 text-md  text-center active:bg-stone-400 hover:bg-stone-500">Youtube</Link>
-                <Link to="/Contact" className="block py-2 px-4 text-md  text-center active:bg-stone-400 hover:bg-stone-500">Contact</Link>
                 <Link to="/Blog" className="block py-2 px-4 text-md text-center active:bg-stone-400 hover:bg-stone-500">Blogs</Link>
-
+                <Link to="/Contact" className="block py-2 px-4 text-md  text-center active:bg-stone-400 hover:bg-stone-500">Contact</Link>
             </div>
 
         </nav>
