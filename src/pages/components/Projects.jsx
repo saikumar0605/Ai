@@ -52,7 +52,7 @@ function Projects() {
           (index % 2 == 0) ? (
             <div className='flex flex-col md:flex-row p-9 shadow-xl bg-stone-300  border-stone-200 rounded-md m-4 min-w-full'>
               <div className='md:w-2/4'>
-                <img src={projectData.thumbnail} className='w-auto rounded-md max-h-72' />
+                <img src={projectData.thumbnail || image} className='w-auto rounded-md max-h-72' />
               </div>
               <div className=' md:w-3/4 md:pl-10'>
                 <h1 className='text-xl pb-2'>{projectData.title}</h1>
@@ -70,7 +70,7 @@ function Projects() {
 
             <div className='flex flex-col md:flex-row-reverse p-9 md:text-right  shadow-xl bg-stone-300  border-stone-200 rounded-md m-4 min-w-full'>
               <div className='md:w-2/4'>
-                <img src={projectData.thumbnail} className='w-auto rounded-md max-h-72' />
+                <img src={projectData.thumbnail || image} className='w-auto rounded-md max-h-72' />
               </div>
               <div className=' md:w-3/4 md:pr-10'>
                 <h1 className='text-xl pb-6 '>{projectData.title}</h1>
@@ -100,7 +100,7 @@ function Projects() {
           (index % 2 == 0) ? (
             <div className='flex flex-col md:flex-row p-9 shadow-xl bg-stone-300  border-stone-200 rounded-md m-4 min-w-full'>
               <div className='md:w-2/4'>
-                <img src={projectData.thumbnail} className='w-auto rounded-md max-h-72' />
+                <img src={projectData.thumbnail || image} className='w-auto rounded-md max-h-72' />
               </div>
               <div className=' md:w-3/4 md:pl-10'>
                 <h1 className='text-xl pb-2'>{projectData.title}</h1>
@@ -118,7 +118,7 @@ function Projects() {
 
             <div className='flex flex-col md:flex-row-reverse p-9 md:text-right  shadow-xl bg-stone-300  border-stone-200 rounded-md m-4 min-w-full'>
               <div className='md:w-2/4'>
-                <img src={projectData.thumbnail} className='w-auto rounded-md max-h-72' />
+                <img src={projectData.thumbnail || image} className='w-auto rounded-md max-h-72' />
               </div>
               <div className=' md:w-3/4 md:pr-10'>
                 <h1 className='text-xl pb-6 '>{projectData.title}</h1>
