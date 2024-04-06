@@ -1,10 +1,10 @@
 [
     {
-        "title": "project title",
-        "subHeadingDesc": "project sub-title",
-        "description": "project description - can be as long as you want",
-        "thumbnail": "https://img.youtube.com/vi/oauJz3XbdjQ/0.jpg",
-        "ghLink": "#"
+        "title": "Computer-network-intrusion-detection",
+        "subHeadingDesc": "Using Deep learning ANN, AWS, MLFLOW and BentoML",
+        "description": "This project focuses on enhancing cybersecurity by implementing a robust Computer Network Intrusion Detection system. Leveraging the power of Artificial Neural Networks (ANN) for code execution, AWS S3 for efficient data storage, and MLflow for model registry and tracking, we have achieved an impressive 97% accuracy in detecting and mitigating network intrusions.",
+        "thumbnail": "",
+        "ghLink": "https://github.com/saikumar0605/Computer-network-intrusion-detection"
     },
     {
         "title": "project title",
