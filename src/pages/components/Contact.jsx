@@ -45,7 +45,7 @@ function Contact() {
             </div>
           </a>
 
-          <a href='https://discord.com/invite/ZpSZ8PmK' target="_blank">
+          <a href='https://discord.gg/uxfBM9zz' target="_blank">
             <div className=' rounded-lg flex flex-col justify-center items-center py-6 shadow-inner hover:shadow-md active:shadow-stone-600 hover:bg-stone-300 max-w-72 m-1'>
               <img src={fb} className=' w-4/12 m-6' />
               Lets chat

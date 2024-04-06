@@ -38,7 +38,7 @@ function Youtube() {
 
         )}
       </div>
-      <h1 className='text-center text-4xl font-bold py-4'>Checkout my Youtube Channel</h1>
+      <h1 className='text-center text-4xl font-bold py-4 px-1'>Checkout other videos on my Youtube Channel</h1>
       <div className='text-black flex flex-wrap justify-center p-1'>
         {/* Render the rest of the videos */}
         {videos.slice(1).map((vidData) => (
