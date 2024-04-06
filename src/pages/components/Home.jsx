@@ -26,10 +26,10 @@ function Home() {
       <div id='saikumarreddy' className='bg-stone-300 shadow-2xl m-5 mt-10 p-1 rounded-md'>
         <h1 className='text-center text-4xl'>About Me!</h1>
         <div className='flex flex-col md:flex-row p-9'>
-          <div>
-            <img src={pro} className=' w-auto rounded-md min-full' />
+          <div className='w-full md:flex-1'>
+            <img src={pro} className='rounded-md '  />
           </div>
-          <div className='pt-10 md:pl-10'>
+          <div className='pt-10 md:pl-10 md:flex-1'>
             <h3 className='md:text-xl pb-6 text-justify'> As an accomplished senior associate data scientist at ineuron.ai and Physicswalla , 
             I have developed a strong foundation in Python, MongoDB, Git and Github, Machine Learning, Deep Learning, NLP, Generative AI, Docker, LLM and MLflow. 
             In addition to my professional work, I am also a successful YouTuber, demonstrating my ability to effectively communicate complex concepts to a broad audience. 
