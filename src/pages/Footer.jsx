@@ -12,7 +12,7 @@ function Footer() {
         {/* Brand */}
         <div className="p-1 flex flex-col md:flex-row items-center">
           <span className="font-bold text-xl">SAI KUMAR REDDY</span>
-          <span className="mt-2 md:mt-0 md:ml-4">Call Me: +91 6363 832 830</span>
+          <span className="mt-2 md:mt-0 md:ml-4"></span>
           <span className='mt-2 md:mt-0 md:ml-4'>Mail me: 123saikumarreddy@gmail.com</span>
         </div>
         
